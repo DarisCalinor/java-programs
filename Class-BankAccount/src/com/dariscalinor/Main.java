@@ -4,6 +4,46 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // Create VIP Customer
+        VipCustomer luthiela = new VipCustomer(
+                "Luthiela",
+                100000.00,
+                "luthiela@mail.com"
+        );
+
+        VipCustomer daris = new VipCustomer(
+                "Daris",
+                50000
+        );
+
+        VipCustomer john = new VipCustomer();
+
+        System.out.println("VIP customers of our bank:");
+        System.out.println(
+                "Name: " +
+                luthiela.getName() +
+                ", E-Mail: " +
+                luthiela.getEmail() +
+                ", Credit Limit: $" +
+                luthiela.getCreditLimit());
+
+        System.out.println(
+                "Name: " +
+                        daris.getName() +
+                        ", E-Mail: " +
+                        daris.getEmail() +
+                        ", Credit Limit: $" +
+                        daris.getCreditLimit());
+
+        System.out.println(
+                "Name: " +
+                        john.getName() +
+                        ", E-Mail: " +
+                        john.getEmail() +
+                        ", Credit Limit: $" +
+                        john.getCreditLimit());
+
+        /*
         // Define account and its fields
         // Account 1
         BankAccount account1 = new BankAccount();
@@ -46,6 +86,6 @@ public class Main {
 
         // End
         System.out.println("End of program. I don't know how to terminate, yet.");
-
+        */
     }
 }
